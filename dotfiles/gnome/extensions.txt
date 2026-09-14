@@ -1,4 +1,5 @@
+arcmenu@arcmenu.com
 blur-my-shell@aunetx
 user-theme@gnome-shell-extensions.gcampax.github.com
-dash-to-dock@micxgx.gmail.com
 just-perfection-desktop@just-perfection
+dash-to-dock@micxgx.gmail.com

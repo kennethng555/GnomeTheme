@@ -5,8 +5,12 @@ sudo apt install \
 	gnome-tweaks \
 	gnome-shell-extension-manager \
 	gdm3 \
-	papirus-icon-theme
-sudo apt install sassc gnome-themes-extra gtk2-engines-murrine
+	papirus-icon-theme \
+	libgnome-menu-3-0 \
+	gir1.2-gmenu-3.0
+	sassc \
+	gnome-themes-extra \
+	gtk2-engines-murrine
 sudo systemctl enable gdm3
 sudo systemctl set-default graphical.target
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize, maximize,close'

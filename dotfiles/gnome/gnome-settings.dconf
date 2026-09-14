@@ -1,5 +1,5 @@
 [control-center]
-last-panel='system'
+last-panel='background'
 window-state=(960, 640, false)
 
 [desktop/app-folders]
@@ -24,8 +24,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/a/.local/share/backgrounds/2026-09-13-05-04-19-cityscape-serenity-with-feline-companion-backiee-8K.jpg'
-picture-uri-dark='file:///home/a/.local/share/backgrounds/2026-09-13-05-04-19-cityscape-serenity-with-feline-companion-backiee-8K.jpg'
+picture-uri='file:///home/a/.local/share/backgrounds/2026-09-14-03-48-10-cityscape-serenity-with-feline-companion-backiee-8K.jpg'
+picture-uri-dark='file:///home/a/.local/share/backgrounds/2026-09-14-03-48-10-cityscape-serenity-with-feline-companion-backiee-8K.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -60,7 +60,7 @@ numlock-state=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/a/.local/share/backgrounds/2026-09-13-05-04-19-cityscape-serenity-with-feline-companion-backiee-8K.jpg'
+picture-uri='file:///home/a/.local/share/backgrounds/2026-09-14-03-48-10-cityscape-serenity-with-feline-companion-backiee-8K.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -73,6 +73,7 @@ migrated=true
 
 [mutter]
 dynamic-workspaces=true
+overlay-key='Super_L'
 
 [nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -87,10 +88,20 @@ night-light-enabled=false
 
 [shell]
 app-picker-layout=[{'byobu.desktop': <{'position': <0>}>, 'conky.desktop': <{'position': <1>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <2>}>, 'htop.desktop': <{'position': <3>}>, 'gnome-language-selector.desktop': <{'position': <4>}>, 'gnome-session-properties.desktop': <{'position': <5>}>, 'info.desktop': <{'position': <6>}>, 'vim.desktop': <{'position': <7>}>, 'org.gnome.Settings.desktop': <{'position': <8>}>, 'yelp.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'firefox_firefox.desktop': <{'position': <11>}>}]
-disabled-extensions=@as []
-enabled-extensions=['blur-my-shell@aunetx', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'dash-to-dock@micxgx.gmail.com', 'search-light@icedman.github.com']
+disabled-extensions=['dash-in-panel@fthx']
+enabled-extensions=['blur-my-shell@aunetx', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'search-light@icedman.github.com', 'dash-to-panel@jderose9.github.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com']
 favorite-apps=['org.gnome.Terminal.desktop', 'firefox_firefox.desktop', 'org.gnome.Nautilus.desktop']
 welcome-dialog-last-shown-version='46.0'
+
+[shell/extensions/arcmenu]
+dash-to-panel-standalone=false
+hide-overview-on-arcmenu-open=false
+hide-overview-on-startup=false
+menu-button-appearance='Icon'
+menu-layout='brisk'
+prefs-visible-page=0
+search-entry-border-radius=(true, 25)
+update-notifier-project-version=73
 
 [shell/extensions/blur-my-shell]
 rounded-blur-found=false
@@ -121,6 +132,9 @@ sigma=30
 static-blur=true
 style-dash-to-dock=0
 
+[shell/extensions/blur-my-shell/dash-to-panel]
+blur-original-panel=false
+
 [shell/extensions/blur-my-shell/lockscreen]
 pipeline='pipeline_default'
 
@@ -145,12 +159,38 @@ sigma=30
 [shell/extensions/dash-to-dock]
 apply-custom-theme=false
 background-opacity=0.80000000000000004
+custom-theme-shrink=true
 dash-max-icon-size=32
+disable-overview-on-startup=false
 dock-fixed=false
 dock-position='BOTTOM'
 height-fraction=0.90000000000000002
 preferred-monitor=-2
 preferred-monitor-by-connector='Virtual-1'
+
+[shell/extensions/dash-to-panel]
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+dot-position='BOTTOM'
+dot-style-focused='DOTS'
+extension-version=73
+global-border-radius=5
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=false
+panel-anchors='{"unknown-unknown":"MIDDLE"}'
+panel-element-positions='{"unknown-unknown":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":false,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centered"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-lengths='{"unknown-unknown":100}'
+panel-positions='{"unknown-unknown":"TOP"}'
+panel-sizes='{"unknown-unknown":32}'
+prefs-opened=false
+scroll-panel-action='NOTHING'
+show-apps-icon-file=''
+trans-panel-opacity=0.40000000000000002
+trans-use-border=false
+trans-use-custom-bg=false
+trans-use-custom-gradient=false
+trans-use-custom-opacity=true
+trans-use-dynamic-opacity=false
+window-preview-title-position='TOP'
 
 [shell/extensions/just-perfection]
 accessibility-menu=true
